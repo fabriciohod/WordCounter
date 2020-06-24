@@ -93,7 +93,7 @@ function groupElements(word) {
 		word.reduce((acc, word) => {
 			const el = word.toLowerCase();
 			const qtd = acc[el] ? acc[el].qtd + 1 : 1;
-			acc[el] = { elemento: el, qtd };
+			acc[el] = { word: el, qtd };
 			return acc;
 		}, {})
 	);
